@@ -23,3 +23,17 @@ document.querySelectorAll('a.nav-link, a.btn[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Adiciona efeito 3D interativo na imagem
+const tiltEffect = document.querySelector(".tilt-effect");
+
+tiltEffect.addEventListener("mousemove", function (event) {
+    let xAxis = (window.innerWidth / 2 - event.pageX) / 25;
+    let yAxis = (window.innerHeight / 2 - event.pageY) / 25;
+    tiltEffect.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
+
+tiltEffect.addEventListener("mouseleave", function () {
+    tiltEffect.style.transform = "rotateY(0deg) rotateX(0deg)";
+});
+
