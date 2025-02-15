@@ -17,18 +17,14 @@
 
 #typing-effect {
     font-size: 2.6rem;
-    /* Ajuste esse valor conforme necessário */
     font-weight: 700;
 }
 
 .typed-cursor {
     font-size: 2.6rem;
-    /* Ajuste esse valor para menor */
     opacity: 0.8;
-    /* Mantém visível, mas menos chamativo */
 }
 
-/* Ajustando texto para alinhamento melhor */
 .hero h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -41,8 +37,6 @@
     opacity: 0.9;
 }
 
-
-/* Responsividade */
 @media (max-width: 992px) {
     .hero {
         text-align: center;
@@ -62,8 +56,6 @@
     }
 }
 
-
-/* Estiliza as imagens animadas */
 .feature-img {
     width: 100%;
     max-width: 120px;
@@ -129,7 +121,6 @@
     box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.3);
 }
 
-/* Adiciona sombra e efeito 3D nos cards */
 .feature-box {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
